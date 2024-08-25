@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            border: 1px solid blue;
+            width: 700px;
+            height: 450px;
+            padding: 10px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .fieldset_1 label{
+            display: inline-block;
+            width: 15%;
+        }
+        .fieldset_2 label{
+            display: inline-block;
+            width: 23%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="">
+        <fieldset class="fieldset_1">
+            <legend>Your Massage:</legend>
+
+            <div>
+            <label for="to">To</label>
+            <input id="to" type="text" name="To" placeholder="Example Cafe">
+            </div>  
+
+            <div>
+            <label for="mail">Your Email</label>
+            <input id="mail" type="email" name="email">
+            </div>
+
+            <div>
+                <label for="msg">Massgae</label>
+                <textarea id="msg" type="text" name="msg" cols="40" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="file">Attach File</label>
+                <input id="file" type="file">
+            </div>
+        </fieldset>
+        <fieldset  class="fieldset_2" >
+            <legend>How you found us</legend>
+
+            <div>
+                <label for="find">How did you hear of us</label>
+                <select name="find" id="find">
+                    <option value="Google" selected>Google</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="newsletter">NewsLetter</label>
+                <input type="checkbox" id="news" name="newsletter">
+                <label for="news" style="width: 70%;">Ensure this box is cheked if you would like to receive email updates</label>
+            </div>
+        </fieldset>
+        <button>Send massage</button>
+    </form>
+    </div>
+</body>
+</html>
